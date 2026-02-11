@@ -1,2 +1,24 @@
 # termgraph
-Pipe data in, get beautiful bar charts, line graphs, sparklines, and heatmaps right in your terminal. Supports CSV, JSON, and stdin. Themes, Unicode/ASCII modes, and responsive to terminal width.
+
+Beautiful charts in your terminal. Bar charts, sparklines, heatmaps.
+
+## Install
+
+```bash
+pip install termgraph
+```
+
+## Usage
+
+```bash
+echo '10,20,30,40' | termgraph bar
+termgraph bar data.csv --color
+termgraph spark data.json --key values
+```
+
+## Testing
+
+```bash
+pip install -e .
+pytest -v
+```
