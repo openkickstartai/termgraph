@@ -2,23 +2,25 @@
 
 Beautiful charts in your terminal. Bar charts, sparklines, heatmaps.
 
-## Install
+## Install from source
 
 ```bash
-pip install termgraph
+git clone https://github.com/openkickstartai/termgraph.git
+cd termgraph
+pip install -e .
 ```
 
 ## Usage
 
 ```bash
-echo '10,20,30,40' | termgraph bar
+echo '10,20,30' | termgraph bar
 termgraph bar data.csv --color
-termgraph spark data.json --key values
+termgraph spark data.json
 ```
 
 ## Testing
 
 ```bash
-pip install -e .
+pip install pytest
 pytest -v
 ```
